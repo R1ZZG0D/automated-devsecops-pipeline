@@ -34,7 +34,7 @@ pipeline {
       steps {
         echo "Running Software Composition Analysis using OWASP Dependency-Check ..."
         withCredentials([string(credentialsId: 'nvd-api-key', variable: 'NVD_API_KEY')]) {
-          sh "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; mvn org.owasp:dependency-check-maven:12.1.0:check -DnvdApiKey=${NVD_API_KEY}"
+          sh "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64; export PATH=\$JAVA_HOME/bin:\$PATH; mvn org.owasp:dependency-check-maven:12.1.0:check -DnvdApiKey=${NVD_API_KEY}"
         }
         
       }
