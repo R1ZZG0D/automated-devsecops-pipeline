@@ -53,7 +53,7 @@ pipeline {
       steps {
         echo "Running Quality Gates to verify the code quality"
         script {
-          timeout(time: 1, unit: 'MINUTES') {
+          timeout(time: 5, unit: 'MINUTES') {
             def qg = waitForQualityGate()
             if (qg.status != 'OK') {
               error "Pipeline aborted due to quality gate failure: ${qg.status}"
