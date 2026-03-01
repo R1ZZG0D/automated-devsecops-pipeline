@@ -12,7 +12,7 @@ pipeline {
       steps {
         git branch: 'main',
         credentialsId: 'GitlabCred',
-        url: 'https://gitlab.com/r1zzg0d-projects/automated-devsecops-pipeline/devsecops-build-pipeline.git
+        url: 'https://gitlab.com/r1zzg0d-projects/automated-devsecops-pipeline/devsecops-build-pipeline.git'
       }
     }
 
