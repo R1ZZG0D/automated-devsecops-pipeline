@@ -1,5 +1,7 @@
 
-# Automated DevSecOps PipeLine
+# Automated DevSecOps PipeLine - devsecops-build-pipeline
+
+This is the CI pipeline.
 
 ## Prerequisites: Create 3 EC2 servers
 
