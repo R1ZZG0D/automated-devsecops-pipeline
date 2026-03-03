@@ -1,0 +1,14 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform lock (KEEP THIS — see below)
+# .terraform.lock.hcl   <-- DO NOT ignore
+
+# SSH keys
+*.pem
+
+# macOS
+.DS_Store
