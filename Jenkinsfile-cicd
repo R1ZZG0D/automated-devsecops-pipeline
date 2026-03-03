@@ -84,7 +84,11 @@ pipeline {
 
     stage('Scan Image') {
       steps {
-        sh "trivy image ${registry}:${IMAGE_TAG} > trivyresults.txt"
+        sh """
+        export TRIVY_DB_REPOSITORY=ghcr.io/aquasecurity/trivy-db
+        export TRIVY_JAVA_DB_REPOSITORY=ghcr.io/aquasecurity/trivy-java-db
+        trivy image ${registry}:${IMAGE_TAG}
+        """
       }
     }
 
