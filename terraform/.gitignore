@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfplan
+# Terraform lock (KEEP THIS — see below)
+# .terraform.lock.hcl   <-- DO NOT ignore
+
+# Mac files
+.DS_Store
+
+# Private keys
+*.pem
+*.key

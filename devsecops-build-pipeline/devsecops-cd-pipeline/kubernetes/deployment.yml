@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: devsecops-app
-          image: r1zzg0d/devsecops-pipeline:18
+          image: r1zzg0d/devsecops-pipeline:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
