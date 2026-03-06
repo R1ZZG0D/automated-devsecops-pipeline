@@ -36,7 +36,7 @@ This is the CI pipeline.
 $ sudo ./setup.sh
 ```
 
-## Step 3: Install Sonrqube on the t2.medium server
+## Step 3: Install Sonarqube on the t2.medium server
 
 ```shell
 $ sudo apt update
